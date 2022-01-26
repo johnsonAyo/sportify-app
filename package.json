@@ -5,15 +5,15 @@
   "main": "server/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/spotify-profile.git"
+    "url": "https://github.com/johnsonAyo/sportify-app.git"
   },
   "keywords": [],
   "author": "Brittany Chiang <brittany.chiang@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bchiang7/spotify-profile/issues"
+    "url": "https://github.com/johnsonAyo/sportify-app.git"
   },
-  "homepage": "https://github.com/bchiang7/spotify-profile#readme",
+  "homepage": "https://github.com/johnsonAyo/sportify-app.git",
   "engines": {
     "node": "10.13.0"
   },
@@ -39,6 +39,7 @@
     }
   },
   "dependencies": {
+    "axios": "^0.25.0",
     "connect-history-api-fallback": "^1.6.0",
     "cookie-parser": "1.4.4",
     "cors": "^2.8.5",
