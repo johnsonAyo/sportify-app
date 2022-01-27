@@ -8,7 +8,7 @@
     "url": "https://github.com/johnsonAyo/sportify-app.git"
   },
   "keywords": [],
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnsonAyo/sportify-app.git"
@@ -18,12 +18,12 @@
     "node": "10.13.0"
   },
   "scripts": {
-    "client:install": "cd client && yarn",
-    "client": "cd client && yarn start",
+    "client:install": "cd client && npm",
+    "client": "cd client && npm start",
     "server": "node server",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "start": "node server",
-    "heroku-postbuild": "cd client/ && yarn && yarn install --production && yarn build"
+    "heroku-postbuild": "cd client/ && npm && npm install --production && npm build"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
