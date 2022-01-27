@@ -11,14 +11,13 @@ console.log(
   process.env.REDIRECT_URI
 );
 
-const port = process.env.PORT || 5000
 
 CLIENT_ID = process.env.CLIENT_ID;
 CLIENT_SECRET = process.env.CLIENT_SECRET;
 REDIRECT_URI = process.env.REDIRECT_URI || "http://localhost:8888/callback";
 app.get("/", (req, res) => {
   const data = {
-    name: "Brittany",
+    name: "Johnson",
     isAwesome: true,
   };
 
@@ -122,6 +121,6 @@ app.get("/refresh_token", (req, res) => {
     });
 });
 
-app.listen(port, () => {
-  console.log(`Express app listening at http://localhost:${port}`);
-});
+const PORT = process.env.PORT || 8888;
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
